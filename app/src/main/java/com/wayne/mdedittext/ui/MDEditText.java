@@ -69,6 +69,10 @@ public class MDEditText extends LinearLayout {
         return mEditText;
     }
 
+    public void setHintAnimationEnabled(boolean enabled) {
+        mInputLayout.setHintAnimationEnabled(enabled);
+    }
+
     public void setErrorEnabled(boolean enabled) {
         mInputLayout.setErrorEnabled(enabled);
     }

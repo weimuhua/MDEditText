@@ -5,6 +5,7 @@
     <color name="colorAccent">@color/color_c1</color>
 
     <color name="color_c1">#FF009078</color>
+    <color name="color_c2">#FFE34646</color>
     <color name="color_c4">#DE000000</color>
     <color name="color_c10">#FFFAFAFA</color>
 </resources>
