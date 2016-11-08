@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
+<ScrollView
     android:id="@+id/activity_main"
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -7,16 +7,38 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/color_c10"
-    android:orientation="vertical"
     tools:context="com.wayne.mdedittext.MainActivity">
 
-    <com.wayne.mdedittext.ui.MDEditText
-        style="@style/MDEditText"
-        app:errorEnable="true"
-        app:hint="@string/username" />
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
 
-    <com.wayne.mdedittext.ui.MDEditText
-        style="@style/MDEditText"
-        app:errorEnable="true"
-        app:hint="@string/password" />
-</LinearLayout>
+        <com.wayne.mdedittext.ui.MDEditText
+            style="@style/MDEditText"
+            app:errorEnable="true"
+            app:hint="@string/username" />
+
+        <com.wayne.mdedittext.ui.MDEditText
+            style="@style/MDEditText"
+            app:errorEnable="true"
+            app:hint="@string/password" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="16dp"
+            android:background="#FFD8D8D8" />
+
+        <com.wayne.mdedittext.ui.MDEditText
+            android:id="@+id/custom_underline_et1"
+            style="@style/MDEditText"
+            app:errorEnable="true"
+            app:hint="@string/username" />
+
+        <com.wayne.mdedittext.ui.MDEditText
+            android:id="@+id/custom_underline_et2"
+            style="@style/MDEditText"
+            app:errorEnable="true"
+            app:hint="@string/password" />
+    </LinearLayout>
+</ScrollView>
